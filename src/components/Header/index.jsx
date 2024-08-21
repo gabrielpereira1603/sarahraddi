@@ -44,7 +44,7 @@ export const Header = () => {
                             </Link>
                         </li>
                         <li className={`${styles.navItem} ${pathname === '/notices' ? styles.active : ''}`}>
-                            <Link href="#">
+                            <Link href="te">
                                 <Image src={NoticiaIcon} alt='Icone Notícias' width={80} />
                                 NOTÍCIAS
                             </Link>
