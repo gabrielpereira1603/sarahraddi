@@ -1,0 +1,61 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+}
+
+.backgroundCard{
+    position: relative;
+}
+
+.backgroundCard img{
+    border-radius: 20px;
+}
+
+
+.cardContent {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.cardContent h1 {
+    margin: 10px 0;
+}
+
+.cardContent p {
+    margin: 0;
+}
+
+.CardIcon {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white; /* Adiciona uma borda branca ao ícone */
+    width: 100px; /* Ajuste o tamanho do ícone */
+    height: 100px; /* Ajuste o tamanho do ícone */
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.CardIcon img {
+    width: 80%;
+    height: auto;
+}

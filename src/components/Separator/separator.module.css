@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+.main {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    margin-top: 30px;
+}
+
+.main .separator {
+    height: 1.5px;
+    width: 100%;
+    background-color: #232323;
+    margin: 10px 40px 0px 40px;
+}
+
+.main p {
+    font-family: aracnereg, Arial, Verdana, sans-serif;
+    font-weight: 600;
+    margin-top: 6px;
+    text-transform: uppercase;
+    font-size: 19px;
+    color: black;
+    transition: color 0.3s ease, padding 0.3s ease; /* Transição suave para cor e padding */
+}
+
+.main:hover p {
+    padding: 10px;
+    cursor: pointer;
+    color: #7f015fa0;
+    transition: color 0.3s ease, padding 0.3s ease; /* Transição suave */
+}

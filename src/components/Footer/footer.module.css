@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+
+.footer {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.socialMediaContainer {
+    width: 100%;
+    background:#7f015fa0;
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.titleSocialMedia {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.titleSocialMedia h5{
+    font-size: 1.9rem;
+    font-family: oswald, Arial, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.titleSocialMedia p{
+    color: #fff;
+    font-family: oswald, Arial, sans-serif;
+    font-weight: 200;
+    color: #fff;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 30px;
+    /* Espaçamento entre os ícones */
+}
+
+.socialMedia a {
+    display: inline-block;
+    border-radius: 50%; /* Torna o contêiner circular */
+    overflow: hidden; /* Garante que o fundo não vaze fora do contêiner */
+    background-color: transparent; /* Inicialmente transparente */
+    padding: 10px; /* Ajuste conforme necessário */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .socialMedia a:hover {
+    background-color: #000000; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1);
+  }
+
+.instagramSection {
+    margin: 40px 0px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.separator{
+    height: 1.5px;
+    width: 30%;
+    background-color: #232323;
+    margin: 10px 40px 0px 40px;
+}
+
+.instagramSection h4 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #232323;
+}
+
+.instagramPosts {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.instagramPosts img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.instagramPosts img:hover {
+    transform: scale(1.1);
+    /* Efeito de zoom ao passar o mouse */
+}
+
+.footerBottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    padding: 15px 0;
+    background-color: #ffffff;
+    /* Mantém uma cor de fundo clara */
+    width: 100%;
+    /* Garante que a seção ocupe toda a largura */
+    box-sizing: border-box;
+    /* Inclui padding dentro da largura total */
+}
+
+.footerBottom p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .instagramPosts img {
+        width: 150px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 400px){
+    .socialMediaContainer{
+        padding: 20px;
+    }
+}

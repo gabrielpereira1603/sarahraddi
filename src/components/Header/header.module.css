@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Zain:wght@200;300;400;700;800;900&display=swap');
+.active {
+    padding-bottom: 10px; /* Ajuste o valor conforme necessário */
+    border-bottom: 3px solid #7f015fa0; /* Cor e espessura da linha */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;  
+}
+
+.logo {
+    width: 375px;
+    margin: 0 auto;
+    z-index: 10;
+    position: relative;
+    top: 40px;
+}
+
+.header nav {
+    margin-top: 40px;
+    position: absolute;
+    font-family: oswald, Arial, sans-serif;
+    top:120px;
+    left: 40px;
+    right: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 5;
+}
+
+.navList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin: 0; /* Remove a margem para evitar interferência com o ajuste do gap */
+}
+
+  
+.navItem img {
+margin-bottom: 8px; /* Adiciona um espaço entre a imagem e o texto */
+}
+
+.navList li{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    color: #232323;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 0.9;
+    transition: color 0.3s ease, padding 0.3s ease; /* Transição suave para cor e padding */
+}
+
+.navList li:hover{
+    padding-bottom: 10px; /* Ajuste o valor conforme necessário */
+    border-bottom: 3px solid #7f015fa0; /* Cor e espessura da linha */
+    border-radius: 1px;
+}
+
+.navList li img{
+    width: 80px;
+}
+
+/* Ajusta a margem apenas para telas grandes */
+.navItem:nth-child(3) {
+    margin-left: 200px; /* Ajuste o valor conforme necessário */
+}
+
+.navItem:nth-child(2) {
+    margin-right: 200px; /* Ajuste o valor conforme necessário */
+}
+
+/* Media queries para telas menores */
+@media (max-width: 1200px) {
+    .navList {
+        gap: 50px; /* Ajusta o gap para telas menores */
+    }
+
+    .navItem:nth-child(3) {
+        margin-left: 200px; /* Ajuste o valor conforme necessário */
+    }
+    
+    .navItem:nth-child(2) {
+        margin-right: 200px; /* Ajuste o valor conforme necessário */
+    }
+}
+
+@media (max-width: 900px) {
+    .logo {
+        width: 300px;
+        margin: 0 auto;
+        z-index: 10;
+        position: relative;
+        top: 40px;
+    }
+
+    .header nav {
+        margin-top: 40px;
+        position: absolute;
+        font-family: oswald, Arial, sans-serif;
+        top:100px;
+        left: 40px;
+        right: 40px;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        z-index: 5;
+    }
+    
+    .navList {
+        gap: 20px; /* Ajusta o gap para telas ainda menores */
+    }
+
+    .navItem {
+        margin-left: 0; /* Remove a margem lateral para telas menores */
+        margin-right: 0; /* Remove a margem lateral para telas menores */
+    }
+
+    .navItem:nth-child(3) {
+        margin-left: 150px; /* Ajuste o valor conforme necessário */
+    }
+    
+    .navItem:nth-child(2) {
+        margin-right: 150px; /* Ajuste o valor conforme necessário */
+    }
+}
+
+@media (max-width: 670px) {
+    .header {
+        display: flex;
+        flex-direction: column;   
+    }
+    
+    .logo {
+        width: 280px;
+        margin: 0 auto;
+        z-index: 10;
+        position: relative;
+        top: 36px;
+    }
+    
+    .header nav {
+        position:relative;
+        font-family: oswald, Arial, sans-serif;
+        top: -30px;
+        left: 0px;
+        right: 0px;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        z-index: 5;
+        margin-top: 0px;
+
+    }
+    
+    .navList {
+        display: flex;
+        justify-content: center;
+        gap: 4%;
+        margin: 0;
+    }
+
+    .navList li img{
+        width: 60px;
+    }
+    
+    /* Ajusta a margem apenas para telas grandes */
+    .navItem:nth-child(3) {
+        margin-left: 0px; /* Ajuste o valor conforme necessário */
+    }
+    
+    .navItem:nth-child(2) {
+        margin-right: 0px; /* Ajuste o valor conforme necessário */
+    }
+}
