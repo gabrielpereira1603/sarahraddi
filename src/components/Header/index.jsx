@@ -32,19 +32,19 @@ export const Header = () => {
                             </Link>
                         </li>
                         <li className={`${styles.navItem} ${pathname === '/projects' ? styles.active : ''}`}>
-                            <Link href="/projects">
+                            <Link href="#">
                                 <Image src={PropostaIcon} alt='Icone Projetos' width={80} />
                                 PROJETOS
                             </Link>
                         </li>
                         <li className={`${styles.navItem} ${pathname === '/campaign' ? styles.active : ''}`}>
-                            <Link href="/campaign">
+                            <Link href="#">
                                 <Image src={CampanhaIcon} alt='Icone Campanha' width={80} />
                                 CAMPANHA
                             </Link>
                         </li>
                         <li className={`${styles.navItem} ${pathname === '/notices' ? styles.active : ''}`}>
-                            <Link href="/notices">
+                            <Link href="#">
                                 <Image src={NoticiaIcon} alt='Icone Notícias' width={80} />
                                 NOTÍCIAS
                             </Link>
