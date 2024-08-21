@@ -17,7 +17,7 @@ export default function Page() {
                 <Header />
 
                 <section className={style.commitmentsSection}>
-                    <h3>Notícias do Joao Caetano</h3>
+                    <h3>Notícias de hoje</h3>
                     <Separator name="Compromissos" icon={Compromisse} />
                     <div className={style.commitmentsGrid}>
                         <div className={style.commitmentCard}>
