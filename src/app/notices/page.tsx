@@ -21,8 +21,30 @@ export default function Page() {
         <main>
             <div className={style.notices}>
                 <Header />
-                <section className={style.commitmentsSection}>
-       
+                <h1 className={style.TitleNoticia}>Notícias</h1>
+
+                <section className={style.mission}>
+                    <div className={style.cards}>
+                        <h1>Missão 1</h1>
+                    </div>
+
+                    <div className={style.cards}>
+                        <h1>Missão 2</h1>
+                    </div>
+
+                    <div className={style.cards}>
+                        <h1>Missão 3</h1>
+                    </div>
+
+                    <div className={style.cards}>
+                        <h1>Missão 4</h1>
+                    </div>
+
+                    <div className={style.cards}>
+                        <h1>Missão 5</h1>
+                    </div>
+
+                 
                 </section>
 
                 <Footer />

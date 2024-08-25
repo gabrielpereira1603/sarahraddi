@@ -43,7 +43,7 @@ export default function Home() {
           <div className={style.introduction} data-aos="fade-up">
             <div className={style.left}>
               <h1>Quem é Sarah Raddi</h1>
-              <h2>Pre Candidata a vereadora pelo partido União Brasil</h2>
+              <h2>Candidata a vereadora pelo partido União Brasil</h2>
               <p>
                 <Image src={BioSarah} alt="Sarah" width={400}/>
               </p>

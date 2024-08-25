@@ -2,25 +2,65 @@
     width: 100%;
     color: #fff;
     position: relative;
-
 }
 
-.commitmentsSection::before {
-    content: "";
+.TitleNoticia {
+    background-color: #34495E;
+    font-family: aracnereg, Arial, Verdana, sans-serif;
+    font-size: 19px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 12px 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: inline-block;
     position: absolute;
-    top: 1; 
-    left: 0;
-    right: 0;
-    height: 34px; 
-    background: url('/assets/wave.png') repeat-x left top; 
-    z-index: 1; 
+    top: 420px;
+    left: 180px;
 }
 
-.commitmentsSection {
+.mission {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a linha de baixo */
+    gap: 20px;
     width: 80%;
     margin-top: 20px;
     padding-bottom: 40px;
     margin: 0 auto;
     background: #7f015fa0;
     background-size: cover;
+    justify-content: space-between; /* Distribui espaço entre os itens */
+}
+
+.mission::before {
+    content: "";
+    position: absolute;
+    top: 1;
+    left: 0;
+    right: 0;
+    height: 34px;
+    background: url('/assets/wave.png') repeat-x left top;
+    z-index: 1;
+}
+
+.cards {
+    flex: 1 1 100%; /* Cards ocupam 100% da largura por padrão */
+    min-width: 280px; /* Largura mínima para os cards */
+    height: 100px;
+    background-color: #34495E;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .cards {
+        flex: 1 1 calc(50% - 20px); /* Em telas maiores, os cards ocupam 50% do espaço */
+    }
+}
+
+@media (min-width: 900px) {
+    .cards {
+        flex: 1 1 calc(33.33% - 20px); /* Em telas ainda maiores, ocupam 33% do espaço */
+    }
 }
